@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #fff;
+    margin: 2rem 0;
+}
+
+.busca {
+    display: flex;
+    width: 30rem;
+}
+.busca #searchInput {
+    flex: 1;
+    padding: 1rem;
+    outline: none;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    border: 0;
+}
+.busca button {
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: 0;
+    background-color: #555;
+    color: #fff;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.busca button:hover {
+    background-color: #444;
+}
+
+.resultado {
+    width: 30rem;
+    display: none;
+    border: 0.1rem dotted #fff;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.titulo {
+    width: 100%;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 2rem;
+}
+
+.info {
+    display: flex;
+    width: 100%;
+}
+.info .temp {
+    flex: 1;
+    text-align: center;
+}
+.info .vento {
+    flex: 1;
+    text-align: center;
+}
+.tempTitulo,
+.ventoTitulo {
+    color: #777;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+.tempInfo,
+.ventoInfo {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.tempInfo sup {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+.ventoInfo span {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+.ventoArea {
+    width: 5rem;
+    height: 5rem;
+    border: 0.1rem solid #fff;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 2rem;
+    padding-left: 2.5rem;
+    padding-top: 2.5rem;
+}
+.ventoPonto {
+    width: 1.5rem;
+    height: 0.1rem;
+    background-color: #fff;
+    transform-origin: left;
+}
+
+.aviso {
+    color: #fff;
+    padding-top: 2rem;
+}
+
+footer {
+    margin-top: 2rem;
+    color: #fff;
+    font-size: 1.3rem;
+}
